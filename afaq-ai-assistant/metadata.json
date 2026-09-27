@@ -1,0 +1,10 @@
+{
+  "name": "Afaq AI Assistant",
+  "description": "Professional desktop-style AI assistant with voice interaction, screen analysis vision, safe computer control, and multilingual intelligence.",
+  "requestFramePermissions": [
+    "display-capture",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
