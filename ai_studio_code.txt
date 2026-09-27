@@ -1,0 +1,34 @@
+├── .env.example              # Template with GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
+├── .gitignore                # Bulletproof ignores (.env, node_modules, dist, logs)
+├── index.html                # App entry point with fonts & favicon
+├── metadata.json             # AI Studio frame permissions & capabilities
+├── package.json              # GitHub-ready name, version, and scripts
+├── README.md                 # Complete GitHub documentation & guide
+├── server.ts                 # Express full-stack server & Vite middleware
+├── server/
+│   └── geminiConfig.ts       # 🧠 ONE centralized place for MODEL & API config
+├── public/
+│   └── favicon.svg           # High-resolution assistant icon
+├── src/
+│   ├── main.tsx              # React DOM entry point
+│   ├── index.css             # Tailwind v4 styles, scrollbars & keyframes
+│   ├── App.tsx               # Main Desktop GUI & assistant state machine
+│   ├── types/
+│   │   └── assistant.ts      # TypeScript interfaces (status, messages, tools)
+│   ├── services/
+│   │   ├── geminiService.ts  # Client API proxy to Express backend
+│   │   ├── voiceService.ts   # Speech-to-Text & Text-to-Speech engine
+│   │   └── screenService.ts  # Screen snapshot capture & vision tools
+│   └── components/
+│       ├── TitleBar.tsx      # Desktop title bar, window controls & quick toggles
+│       ├── AvatarOrb.tsx     # Central glowing animated AI avatar
+│       ├── ChatArea.tsx      # Conversation area with code blocks & copy buttons
+│       ├── InputBar.tsx      # Mic, text box, send & action chips
+│       ├── ScreenCaptureModal.tsx # "See My Computer" explicit capture & vision
+│       ├── SecurityConfirmModal.tsx # "Are you sure?" confirmation dialog
+│       ├── SettingsModal.tsx  # Voice, language, memory & security settings
+│       ├── BeginnerGuideModal.tsx # In-app 10-step manual & documentation
+│       ├── ImageViewModal.tsx # Enlarged screenshot viewer
+│       └── ActionToast.tsx   # Tool execution status notifications
+├── tsconfig.json             # TypeScript configuration
+└── vite.config.ts            # Vite bundler & alias setup
